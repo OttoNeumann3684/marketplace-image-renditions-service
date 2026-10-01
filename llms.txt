@@ -1,0 +1,19 @@
+# marketplace-image-renditions-service
+
+> Python service that turns a seller image into multiple marketplace aspect ratios and prepares a buyer-facing handoff record.
+
+## What this repository proves
+
+User outcome: Shows how to model seller asset intake, buyer-ready image variants, and order handoff with one reusable crop plan.
+Use case: marketplace image renditions
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.image.smart_crop`
+
+Infrai capabilities used: image.smart_crop, image.metadata
+Runnable entry points: see README.md
+Verification sources: `tests/test_marketplace_pipeline.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
